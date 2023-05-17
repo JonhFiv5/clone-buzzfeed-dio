@@ -15,7 +15,7 @@ export class QuizComponent {
   finalResult: string = '';
   questionCurrentIndex: number = 0;
   questionMaxIndex: number = 0;
-  finished: boolean = true;
+  finished: boolean = false;
 
   ngOnInit() {
     if(quiz_questions) {
@@ -53,5 +53,13 @@ export class QuizComponent {
 
     this.finalResult = this.results[result as keyof typeof this.results];
     this.finished = true;
+  }
+
+  restartQuiz() {
+    this.answers = [];
+    this.finalResult = '';
+    this.questionCurrentIndex = 0;
+    this.selectedQuestion = this.questions[0];
+    this.finished = false;
   }
 }

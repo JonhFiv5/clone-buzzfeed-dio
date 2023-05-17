@@ -1,7 +1,7 @@
 <div class="quiz__container">
 
     <div class="quiz__logo">
-        <img src="assets/imgs/logo.png" alt="">
+        <img src="assets/imgs/logo.png" alt="Buzzfeed Logo">
         <h3>{{ title }}</h3>
     </div>
 
@@ -22,6 +22,12 @@
     <div *ngIf="finished" class="quiz__results">
         <h1>O seu resultado é:</h1>
         <p>{{ finalResult }}</p>
+        <button 
+            class="btn-option"
+            (click)="restartQuiz()"
+        >
+            Responder novamente
+        </button>
     </div>
 
 </div>
