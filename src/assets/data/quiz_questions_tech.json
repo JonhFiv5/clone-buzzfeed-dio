@@ -1,0 +1,59 @@
+{
+  "title":"Você se daria melhor com front ou back?",
+  "questions":[
+    {
+      "id":1,
+      "question": "Com qual linguagem você prefere trabalhar?",
+      "options":[
+        {"id": 1, "name":"JavaScript", "alias":"A"},
+        {"id": 2, "name":"Python", "alias":"B"},
+        {"id": 3, "name":" HTML", "alias":"A"},
+        {"id": 4, "name":"PHP", "alias":"B"}
+      ]
+    },
+    {
+      "id":2,
+      "question": "Qual é o seu objetivo principal ao desenvolver um site ou aplicativo?",
+      "options":[
+        {"id": 1, "name":"Lidar com grandes volumes de dados", "alias":"B"},
+        {"id": 2, "name":"Tornar a experiência do usuário mais intuitiva", "alias":"A"},
+        {"id": 3, "name":"Garantir a compatibilidade com diferentes dispositivos", "alias":"A"},
+        {"id": 4, "name":"Implementar recursos de segurança e autenticação", "alias":"B"}
+      ]
+    },
+    {
+      "id":3,
+      "question": "Qual aspecto do desenvolvimento web você considera mais interessante?",
+      "options":[
+        {"id": 1, "name":"Criação de layouts e estilos visualmente atraentes", "alias":"A"},
+        {"id": 2, "name":"Construção de APIs e integração de serviços", "alias":"B"},
+        {"id": 3, "name":"Otimização de consultas e desempenho do banco de dados", "alias":"B"},
+        {"id": 4, "name":"Implementação de animações e interações interativas", "alias":"A"}
+      ]
+    },
+    {
+      "id":4,
+      "question": "Que ferramentas você prefere usar durante o desenvolvimento?",
+      "options":[
+        {"id": 1, "name":"SQL", "alias":"B"},
+        {"id": 2, "name":"Node.js", "alias":"B"},
+        {"id": 3, "name":"React.js", "alias":"A"},
+        {"id": 4, "name":"CSS", "alias":"A"}
+      ]
+    },
+    {
+      "id":5,
+      "question": "Qual tipo de projeto você prefere trabalhar?",
+      "options":[
+        {"id": 1, "name":"Desenvolvimento de aplicativos móveis", "alias":"A"},
+        {"id": 2, "name":"Sistemas de gerenciamento de bancos de dados", "alias":"B"},
+        {"id": 3, "name":"Websites interativos e responsivos", "alias":"A"},
+        {"id": 4, "name":"Plataformas de comércio eletrônico", "alias":"B"}
+      ]
+    }
+  ],
+  "results":{
+    "A": "Você muito provavelmente adoraria front-end!",
+    "B": "Você muito provavelmente adoraria back-end!"
+  }
+}
