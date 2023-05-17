@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./quiz.component.css']
 })
 export class QuizComponent {
+  title: string = '';
+  questions: any;
+  selectedQuestion: any;
+  answers: string[] = [];
+  selectedAnswer: string = '';
+  questionCurrentIndex: number = 0;
+  questionMaxIndex: number = 0;
+  finished: boolean = true;
 
 }
