@@ -7,6 +7,7 @@
 
     <div *ngIf="!finished" class="quiz__questions">
         <h3>{{ selectedQuestion.question }}</h3>
+        <span>[{{questionCurrentIndex + 1}}/{{questionMaxIndex + 1}}]</span>
     </div>
 
     <div *ngIf="!finished" class="quiz__options">
