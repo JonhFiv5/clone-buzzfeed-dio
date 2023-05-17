@@ -32,8 +32,12 @@ export class QuizComponent {
     console.log(this.selectedQuestion)
   }
 
-  playerChoice(choice: string) {
+  savePlayerChoice(choice: string) {
     this.answers.push(choice);
+    this.showNextQuestion();
+  }
+
+  showNextQuestion() {
     this.questionCurrentIndex++;
     if(this.questionCurrentIndex <= this.questionMaxIndex) {
       this.selectedQuestion = this.questions[this.questionCurrentIndex];
@@ -46,6 +50,7 @@ export class QuizComponent {
     let qtdOptionA = answers.filter(answer => answer === 'A').length;
     let qtdOptionB = answers.filter(answer => answer === 'B').length;
     let result = qtdOptionA > qtdOptionB ? 'A' : 'B';
+
     this.finalResult = this.results[result as keyof typeof this.results];
     this.finished = true;
   }
